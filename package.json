@@ -19,6 +19,7 @@
     "vue3-click-away": "^1.2.4",
     "vue3-geolocation": "^1.0.0",
     "vue3-google-map": "^0.15.0",
+    "@vue/cli-service": "~5.0.0",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
