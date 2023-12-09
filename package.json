@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "concurrently  \"npm run node_server\" \"npm run serve\"",
-    "node_server": "node ./src/api/reviews.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --output public"
   },
