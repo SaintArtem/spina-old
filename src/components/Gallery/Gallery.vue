@@ -31,7 +31,12 @@
                   </div>
             </div>
       </div>
-      
+      <div class="youtube-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wFfUbHocorI?si=7H5m73ZGv6LXpQOA"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+      </div>
 </template>
 
 <script>
@@ -49,7 +54,21 @@ export default {
       grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
       gap: 30px;
       justify-content: center;
+      margin-bottom: 70px;
+}
+
+.youtube-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      justify-content: center;
       margin-bottom: 100px;
+
+      iframe {
+            margin: 0 auto;
+            width: 65%;
+            height: 450px;
+      }
 }
 
 .gallery_title {
