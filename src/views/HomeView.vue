@@ -2,7 +2,7 @@
   <div class="app_wrapper">
     <div class="main">
       <div class="hero_wrap">
-        <p class="title_hero"> Центр кінезітерапії /* 09.12.23 */</p>
+        <p class="title_hero"> Центр кінезітерапії </p>
         <p class="logo_text"> SPYNA LIFE </p>
         <h4 class="title_hero"> Лікуємо причини, а не симптоми болю </h4>
         <div class="hero_text">
