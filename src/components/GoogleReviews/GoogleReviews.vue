@@ -1,7 +1,7 @@
 <template>
       <div class="reviews-container">
             <h2 class="reviews-title">Google Reviews</h2>
-            <!-- <ul class="reviews-list">
+            <ul class="reviews-list">
                   <li v-for="review in reviews" :key="review.time" class="reviews-list-item">
                         <div class="image-side">
                               <a :href="review.author_url" target="_blank">
@@ -28,40 +28,36 @@
                               <p class="reviews-list__text">{{ review.text }}</p>
                         </div>
                   </li>
-            </ul> -->
+            </ul>
       </div>
 </template>
 
 <script>
-// import axios from 'axios';
+import axios from 'axios';
 
 export default {
       name: "GoogleReviews",
 
-      // data() {
-      //       return {
-      //             reviews: [],
-      //       };
-      // },
-      // mounted() {
-      //       this.getGoogleReviews();
-      // },
-      // methods: {
-      //       getGoogleReviews() {
-      //             axios.get('http://localhost:3000/reviews', {
-      //                   params: {
-      //                         placeId: 'ChIJm8-YVH7F1EARe2xgvEhC-Yw'
-      //                   }
-      //             })
-      //                   .then(response => {
-      //                         console.log(response.data.result.reviews);
-      //                         this.reviews = response.data.result.reviews;
-      //                   })
-      //                   .catch(error => {
-      //                         console.error(error);
-      //                   });
-      //       },
-      // },
+      data() {
+            return {
+                  reviews: [],
+            };
+      },
+      mounted() {
+            this.getGoogleReviews();
+      },
+      methods: {
+            getGoogleReviews() {
+                  axios.get('/api/reviews')
+                        .then(response => {
+                              console.log(response.data.result.reviews);
+                              this.reviews = response.data.result.reviews;
+                        })
+                        .catch(error => {
+                              console.error(error);
+                        });
+            },
+      },
 };
 
 </script>
