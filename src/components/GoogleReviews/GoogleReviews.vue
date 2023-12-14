@@ -1,6 +1,6 @@
 <template>
       <div class="reviews-container">
-            <h2 class="reviews-title">Google Reviews</h2>
+            <h2 class="reviews-title">Відгуки з Google</h2>
             <ul class="reviews-list">
                   <li class="reviews-list-item">
                         <div class="image-side">
